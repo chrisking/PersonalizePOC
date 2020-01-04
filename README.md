@@ -1,16 +1,16 @@
-# Forecast POC Guide
+# Personalize POC Guide
 
-Amazon Forecast is a machine learning service that allows you to build and scale time series models in a quick and effective process. The content below is designed to help you build out your first models for your given use case and makes assumptions that your data may not yet be in an ideal format for Amazon Forecast to use.
+Amazon Personalize is a machine learning service that allows you to build and scale recommendation/personalization models in a quick and effective manner. The content below is designed to help you build out your first models for your given use case and makes assumptions that your data may not yet be in an ideal format for Amazon Personalize to use.
 
 This repository assumes a base familiarity with the service and if you have not already done so it is recommended that you use the getting-started material below.
 
-## Introduction to Amazon Forecast
+## Introduction to Amazon Personalize
 
-If you are not familiar with Amazon Forecast you can learn more about this tool on these pages:
+If you are not familiar with Amazon Personalize you can learn more about this tool on these pages:
 
-* [Product Page](https://aws.amazon.com/forecast/)
-* [GitHub Sample Notebooks](https://github.com/aws-samples/amazon-forecast-samples)
-* [Product Docs](https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html)
+* [Product Page](https://aws.amazon.com/personalize/)
+* [GitHub Sample Notebooks](https://github.com/aws-samples/amazon-personalize-samples)
+* [Product Docs](https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html)
 
 ## Completed Example
 
@@ -19,11 +19,12 @@ The notebooks have been scrubbed of all output before usage, however if you'd li
 ## Process:
 
 1. Deploying Your Working Environment
-1. Validating and Importing Target Time Series Data
-1. Validating and Importing Related Time Series Data (To Test)
-1. Creating and Evaluating Your First Predictors
-1. Importing Related Time Series Data (To Use)
-1. Creating and Evaluating Related Time Series Enabled Predictors
+1. Validating and Importing User-Item-Interaction Data
+1. Validating and Importing Item-Metadata
+1. Validating and Importing User-Metadata
+1. Creating and Evaluating Your First Solutions
+1. Importing Item / User metadata to Use
+1. Creating and Evaluating Related Metadata Solutions
 1. Next Steps
 
 That is a genereal order to this proccess, however if you are operating this as an assisted 2 day on-site POC. It is recommended that you operate steps 2 and 4 beforehand. Once the related data has been successfully imported you can delete it so that it does not muddy the results from your first Predictor.
@@ -89,12 +90,13 @@ This will open the Jupyter environment for your POC, think of it as a web based 
 
 
 
-## Validating and Importing Target Time Series Data
+## Validating and Importing User-Item-Interaction Data
 
-Open `Validating_and_Importing_Target_Time_Series_Data.ipynb` and follow along there.
+The core data for every algorithm supported in Amazon Personalize is User-Item-Interaction data, this notebook will guide you through the process of identifying this data, then formatting it for the service, defining your schema, and lastly importing it. 
 
-Once this has completed you can move onto prepping your Related Time Series data though you may not want to actually delete it after the import completes. 
-If the data resides within your DatasetGroup then models will use it automatically when you train them and you are not able to determine the impact of just your base time series data easily.
+Open `Validating_and_Importing_User_Item_Interaction_Data.ipynb` and follow along there.
+
+Once you have completed this, you can move onto the Item and User Metadata sections.
 
 ## Validating and Importing Related Time Series Data
 
