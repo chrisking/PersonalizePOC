@@ -36,12 +36,11 @@ The notebooks have been scrubbed of all output before usage, however if you'd li
 `Validating_and_Importing_Item_Metadata.ipynb`
 1. Creating and Evaluating Your First Solutions - 
 `Creating_and_Evaluating_Solutions.ipynb`
-1. Deploying Your Campaigns and Interacting With Personalize - 
+1. Deploying Your Campaigns and Interacting with Personalize - 
 `Creating_and_Evaluating_Solutions.ipynb`
-1. Importing Item / User metadata to Use [In Development]
+1. Importing Item / User metadata [In Development]
 1. Creating and Evaluating Related Metadata Solutions [In Development]
-1. Next Steps - 
-`Next_Steps.md`
+1. Next Steps 
 
 That is a genereal order to this proccess, however if you are operating this as an assisted 2 day on-site POC. It is recommended that you operate steps 2 and 4 beforehand. Once the related data has been successfully imported you can delete it so that it does not muddy the results from your first Predictor.
 
@@ -62,10 +61,9 @@ Start by clicking `Next` at the bottom like this:
 
 On this page you have a few tasks:
 
-1. Change the Stack name to something relevant like `ForecastPOC`
-2. Decide if you want to use an existing VPC or not
-3. Change the Notebook Name (Optional)
-4. Alter the VolumeSize for the SageMaker EBS volume, default is 10GB, if your dataset is expected to be larger, please increase this accordingly.
+1. Change the Stack name to something relevant like `PersonalizePOC`
+1. Change the Notebook Name (Optional)
+1. Alter the VolumeSize for the SageMaker EBS volume, default is 10GB, if your dataset is expected to be larger, please increase this accordingly.
 
 
 When you are done click `Next` at the bottom.
@@ -114,7 +112,7 @@ Open `Validating_and_Importing_User_Item_Interaction_Data.ipynb` and follow alon
 
 Once you have completed this, you can move onto the Item and User Metadata sections.
 
-## Validating and Importing Item Metadata [Optional]
+## Validating and Importing Item Metadata [IN Development]
 
 Amazon Personalize has several algorithms that can give you a result with no metadata. However the HRNN-Metadata Algorithm might be an interestesting resource to deploy given your dataset. In case it is there is an optional item metadata notebook below. It is similar to the process for users and the only algorithm that supports either data type is HRNN-Metadata.
 
@@ -130,3 +128,12 @@ In Amazon Personalize there is a concept of a Solution, this is a trained model 
 
 Something you may notice is that each of these algorithms or recipies solves a critically different problem, the goal is to show you how to build things that address a host of problems from a relatively simple dataset.
 Open `Creating_and_Evaluating_Solutions.ipynb` and follow along to build these Solutions and see their results.
+
+### Deploying Your Campaigns and Interacting with Personalize
+
+### Importing Item / User Metadata [In Development]
+
+### Creating and Evaluating Related Metadata Solutions [In Development]
+
+### Next Steps
+
