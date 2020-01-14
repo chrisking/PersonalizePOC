@@ -12,20 +12,36 @@ If you are not familiar with Amazon Personalize you can learn more about this to
 * [GitHub Sample Notebooks](https://github.com/aws-samples/amazon-personalize-samples)
 * [Product Docs](https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html)
 
+## Goals 
+
+By the end of this POC progress you should have picked up the follwoing skills:
+
+1. How to map datasets to Amazon Personalize.
+1. Which models or recipes are appropriate for which use cases.
+1. How to build models in a programatic fashion.
+1. To interpret model metrics.
+1. To deploy models in a programatic fashion.
+1. To obtain results from Personalize
+
 ## Completed Example
 
 The notebooks have been scrubbed of all output before usage, however if you'd like to see a fully worked out example of this process, explore the notebooks in the `completed` folder.
 
 ## Process:
 
-1. Deploying Your Working Environment
-1. Validating and Importing User-Item-Interaction Data
-1. Validating and Importing Item-Metadata (Optional)
-1. Creating and Evaluating Your First Solutions
-1. Deploying Your Campaigns and Interacting With Personalize
-1. Importing Item / User metadata to Use
-1. Creating and Evaluating Related Metadata Solutions (Optional)
-1. Next Steps
+1. Deploying Your Working Environment [See Below]
+1. Validating and Importing User-Item-Interaction Data - 
+`Validating_and_Importing_User_Item_Interaction_Data.ipynb`
+1. Validating and Importing Item-Metadata [In Development] - 
+`Validating_and_Importing_Item_Metadata.ipynb`
+1. Creating and Evaluating Your First Solutions - 
+`Creating_and_Evaluating_Solutions.ipynb`
+1. Deploying Your Campaigns and Interacting With Personalize - 
+`Creating_and_Evaluating_Solutions.ipynb`
+1. Importing Item / User metadata to Use [In Development]
+1. Creating and Evaluating Related Metadata Solutions [In Development]
+1. Next Steps - 
+`Next_Steps.md`
 
 That is a genereal order to this proccess, however if you are operating this as an assisted 2 day on-site POC. It is recommended that you operate steps 2 and 4 beforehand. Once the related data has been successfully imported you can delete it so that it does not muddy the results from your first Predictor.
 
@@ -34,7 +50,7 @@ That is a genereal order to this proccess, however if you are operating this as 
 
 As mentioned above, the first step is to deploy a CloudFormation template that will perform much of the initial setup work for you. In another browser window or tab, login to your AWS account. Once you have done that, open the link below in a new tab to start the process of deploying the items you need via CloudFormation.
 
-[![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=ForecastDemo&templateURL=https://chriskingpartnershare.s3.amazonaws.com/ForecastPOC.yaml)
+[![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=ForecastDemo&templateURL=https://chriskingpartnershare.s3.amazonaws.com/PersonalizePOC.yaml)
 
 Follow along with the screenshots below if you have any questions about deploying the stack.
 

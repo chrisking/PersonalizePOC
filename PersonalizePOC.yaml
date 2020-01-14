@@ -8,7 +8,7 @@ Parameters:
   NotebookName:
     Type: String
     Default: PersonalizePOC
-    Description: Enter the name of the SageMaker notebook instance. Deafault is PersonalizeDemoLab.
+    Description: Enter the name of the SageMaker notebook instance. Deafault is PersonalizePOC.
 
   VolumeSize:
     Type: Number
