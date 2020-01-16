@@ -131,9 +131,19 @@ Open `Creating_and_Evaluating_Solutions.ipynb` and follow along to build these S
 
 ### Deploying Your Campaigns and Interacting with Personalize
 
+Once you have a series of trained solutions the next step is to deploy them, that is done inside `Deploying_Campaigns_and_Interacting.ipynb`. Here you will learn:
+
+1. Deployment and capacity planning
+1. How to interact with a deployed solution ( various approaches )
+1. Real-Time interactions
+1. Batch exporting ( and why )
+
 ### Importing Item / User Metadata [In Development]
 
 ### Creating and Evaluating Related Metadata Solutions [In Development]
 
 ### Next Steps
 
+This should have left you with a series of working models for your customer, from here you will look to leverage how they accomplish AB testing today against their goals ( coversions, clicks, etc) and then start sending traffic to these models and monitoring those metrics. Over time this should build confidence and will be your path to production at scale.
+
+More content on AB testing coming soon as well.
