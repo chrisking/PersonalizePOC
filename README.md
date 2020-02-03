@@ -35,14 +35,12 @@ The notebooks have been scrubbed of all output before usage, however if you'd li
 1. Validating and Importing Item-Metadata [In Development] - 
 `Validating_and_Importing_Item_Metadata.ipynb`
 1. Creating and Evaluating Your First Solutions - 
-`Creating_and_Evaluating_Solutions.ipynb`
-1. Deploying Your Campaigns and Interacting with Personalize - 
-`Creating_and_Evaluating_Solutions.ipynb`
+`Deploying_Campaigns_and_Interacting.ipynb`
 1. Importing Item / User metadata [In Development]
 1. Creating and Evaluating Related Metadata Solutions [In Development]
 1. Next Steps 
 
-That is a genereal order to this proccess, however if you are operating this as an assisted 2 day on-site POC. It is recommended that you operate steps 2 and 4 beforehand. Once the related data has been successfully imported you can delete it so that it does not muddy the results from your first Predictor.
+That is a genereal order to this proccess, however if you are operating this as an assisted 2 day on-site POC. It is recommended that you at least import the user-item-interaction data before arriving in person.
 
 
 ## Deploying Your Working Environment
