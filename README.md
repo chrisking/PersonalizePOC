@@ -14,33 +14,38 @@ If you are not familiar with Amazon Personalize you can learn more about this to
 
 ## Goals 
 
-By the end of this POC progress you should have picked up the follwoing skills:
+By the end of this POC, you should have picked up the following skills:
 
 1. How to map datasets to Amazon Personalize.
 1. Which models or recipes are appropriate for which use cases.
-1. How to build models in a programatic fashion.
+1. How to build models in a programmatic fashion.
 1. To interpret model metrics.
-1. To deploy models in a programatic fashion.
-1. To obtain results from Personalize
+1. To deploy models in a programmatic fashion.
+1. To obtain results from Personalize.
 
 ## Completed Example
 
 The notebooks have been scrubbed of all output before usage, however if you'd like to see a fully worked out example of this process, explore the notebooks in the `completed` folder.
 
+## Workshop Version
+
+The notebooks contain all of the code you need to work through a simple POC, but if you are running a workshop, participants will be more engaged if they have to write some of the code themselves. The notebooks in the `workshop` folder have some cells where the participant is asked to complete a challenge.
+
 ## Process:
 
-1. Deploying Your Working Environment [See Below]
-1. Validating and Importing User-Item-Interaction Data - 
-`Validating_and_Importing_User_Item_Interaction_Data.ipynb`
-1. Validating and Importing Item-Metadata [In Development] - 
+1. Deploying your working environment [see below]
+1. Validating and importing user-item-interaction data - 
+`01_Validating_and_Importing_User_Item_Interaction_Data.ipynb`
+1. Validating and importing item-metadata [in development] - 
 `Validating_and_Importing_Item_Metadata.ipynb`
-1. Creating and Evaluating Your First Solutions - 
-`Deploying_Campaigns_and_Interacting.ipynb`
-1. Importing Item / User metadata [In Development]
-1. Creating and Evaluating Related Metadata Solutions [In Development]
-1. Next Steps 
+1. Creating and evaluating your first solutions - 
+`02_Creating_and_Evaluating_Solutions.ipynb`
+1. Importing item / user metadata [in development]
+1. Creating and evaluating related metadata solutions [in development]
+1. Deploying and interacting with campaigns -
+`03_Deploying_Campaigns_and_Interacting.ipynb` 
 
-That is a genereal order to this proccess, however if you are operating this as an assisted 2 day on-site POC. It is recommended that you at least import the user-item-interaction data before arriving in person.
+That shows the usual order of this process, however, if you are operating this as an assisted 2 day on-site POC, it is recommended that you at least import the user-item-interaction data before arriving in person.
 
 
 ## Deploying Your Working Environment
@@ -68,7 +73,7 @@ When you are done click `Next` at the bottom.
 
 ![StackWizard2](static/imgs/img2.png)
 
-This page is a bit longer so scroll to the bottom to click `Next`. All of the defaults should be sufficient to complete the POC, if you have custom requirements alter as necessary.
+This page is a bit longer, so scroll to the bottom to click `Next`. All of the defaults should be sufficient to complete the POC, if you have custom requirements, alter as necessary.
 
 ![StackWizard3](static/imgs/img3.png)
 
@@ -85,12 +90,12 @@ Once it has completed you'll see green text like below indicating that the work 
 
 ![StackWizard5](static/imgs/img6.png)
 
-Now that your environment has been created go to the service page for Sageamaker by clicking `Services` in the top of the console and then searching for `SageMaker` and clicking the service.
+Now that your environment has been created go to the service page for SageMaker by clicking `Services` in the top of the console and then searching for `SageMaker` and clicking the service.
 
 
 ![StackWizard5](static/imgs/img7.png)
 
-From the SageMaker console scroll until you see the green box indicating now many notebooks you have in service and click that.
+From the SageMaker console, scroll until you see the green box indicating now many notebooks you have in service and click that.
 
 ![StackWizard5](static/imgs/img8.png)
 
@@ -98,50 +103,53 @@ On this page you will see a list of any SageMaker notebooks you have running, si
 
 ![StackWizard5](static/imgs/img9.png)
 
-This will open the Jupyter environment for your POC, think of it as a web based data science IDE if you are not familiar with it. It should Automatically open the `PersonalizePOC` folder for you, but if it does not do that by clicking on the folder icon in the browser on the left side of the screen and follow the documentation below to get started with your POC!
-
-
+This will open the Jupyter environment for your POC; think of it as a web based data science IDE if you are not familiar with it. It should automatically open the `PersonalizePOC` folder for you, if not, just click on the folder icon in the browser on the left side of the screen and follow the documentation below to get started with your POC!
 
 ## Validating and Importing User-Item-Interaction Data
 
-The core data for every algorithm supported in Amazon Personalize is User-Item-Interaction data, this notebook will guide you through the process of identifying this data, then formatting it for the service, defining your schema, and lastly importing it. 
+The core data for every algorithm supported in Amazon Personalize is user-item-interaction data; this notebook will guide you through the process of identifying this data, then formatting it for the service, defining your schema, and lastly importing it. 
 
-Open `Validating_and_Importing_User_Item_Interaction_Data.ipynb` and follow along there.
+Open `01_Validating_and_Importing_User_Item_Interaction_Data.ipynb` and follow along there.
 
-Once you have completed this, you can move onto creating and evaluating your first solutions.
+Once you have completed this, you can move on to creating and evaluating your first solutions.
 
-## Validating and Importing Item Metadata [IN Development]
+## Validating and Importing Item Metadata [in development]
 
-Amazon Personalize has several algorithms that can give you a result with no metadata. However the HRNN-Metadata Algorithm might be an interestesting resource to deploy given your dataset. In case it is there is an optional item metadata notebook below. It is similar to the process for users and the only algorithm that supports either data type is HRNN-Metadata.
+Amazon Personalize has several algorithms that can give you a results with no metadata. However, the HRNN-Metadata algorithm might be an interesting resource to deploy, depending your dataset. In case it is, there is an optional item metadata notebook below. It is similar to the process for users, and the only algorithm that supports either data type is HRNN-Metadata.
 
 Open `Validating_and_Importing_Item_Metadata.ipynb` and follow along there to prepare the dataset for the POC/Amazon Personalize.
 
 ## Creating and Evaluating Your First Solutions
 
-In Amazon Personalize there is a concept of a Solution, this is a trained model based on the data that you've provided to the service. All models are private and no data occurs between accounts or even Dataset Groups. This notebook will guide you through the process of training models aka building a solution for:
+In Amazon Personalize there is a concept of a solution, which is a trained model based on the data that you've provided to the service. All models are private and no data sharing occurs between accounts or even between dataset groups. This notebook will guide you through the process of training models; aka building a solution for:
 
 * HRNN
 * SIMS
 * Personalized-Ranking
 
-Something you may notice is that each of these algorithms or recipies solves a critically different problem, the goal is to show you how to build things that address a host of problems from a relatively simple dataset.
-Open `Creating_and_Evaluating_Solutions.ipynb` and follow along to build these Solutions and see their results.
+Something you may notice is that each of these algorithms or recipes solves a critically different problem. The goal is to show you how to build things that address a host of problems from a relatively simple dataset.
+
+Open `02_Creating_and_Evaluating_Solutions.ipynb` and follow along to build these solutions and see their results.
 
 ### Deploying Your Campaigns and Interacting with Personalize
 
-Once you have a series of trained solutions the next step is to deploy them, that is done inside `Deploying_Campaigns_and_Interacting.ipynb`. Here you will learn:
+Once you have a series of trained solutions the next step is to deploy them. This is done inside `03_Deploying_Campaigns_and_Interacting.ipynb`. Here you will learn:
 
 1. Deployment and capacity planning
-1. How to interact with a deployed solution ( various approaches )
-1. Real-Time interactions
-1. Batch exporting ( and why )
+1. How to interact with a deployed solution (various approaches)
+1. Real-time interactions
+1. Batch exporting
 
-### Importing Item / User Metadata [In Development]
+### Importing Item / User Metadata [in development]
 
-### Creating and Evaluating Related Metadata Solutions [In Development]
+TBD
+
+### Creating and Evaluating Related Metadata Solutions [in development]
+
+TBD
 
 ### Next Steps
 
-This should have left you with a series of working models for your customer, from here you will look to leverage how they accomplish AB testing today against their goals ( coversions, clicks, etc) and then start sending traffic to these models and monitoring those metrics. Over time this should build confidence and will be your path to production at scale.
+Following these notebooks should have left you with a series of working models for your customer. From here, you will look to leverage how the customer accomplishes AB testing today against their goals (coversions, clicks, etc) and then start sending traffic to these models and monitoring those metrics. Over time this should build confidence and will be your path to production at scale.
 
 More content on AB testing coming soon as well.
