@@ -153,3 +153,7 @@ TBD
 Following these notebooks should have left you with a series of working models for your customer. From here, you will look to leverage how the customer accomplishes AB testing today against their goals (coversions, clicks, etc) and then start sending traffic to these models and monitoring those metrics. Over time this should build confidence and will be your path to production at scale.
 
 More content on AB testing coming soon as well.
+
+### Cleaning Up
+
+If you want to delete all the resources created in your AWS account while following along with these notebooks, please see the `Clean_Up_Resources.ipynb` notebook in the `extra` folder. 
