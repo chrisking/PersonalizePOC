@@ -43,7 +43,8 @@ The notebooks contain all of the code you need to work through a simple POC, but
 1. Importing item / user metadata [in development]
 1. Creating and evaluating related metadata solutions [in development]
 1. Deploying and interacting with campaigns -
-`03_Deploying_Campaigns_and_Interacting.ipynb` 
+`03_Deploying_Campaigns_and_Interacting.ipynb`
+1. Cleaning up the resources on your AWS account - `04_Clean_Up_Resources.ipynb`
 
 That shows the usual order of this process, however, if you are operating this as an assisted 2 day on-site POC, it is recommended that you at least import the user-item-interaction data before arriving in person.
 
@@ -156,4 +157,4 @@ More content on AB testing coming soon as well.
 
 ### Cleaning Up
 
-If you want to delete all the resources created in your AWS account while following along with these notebooks, please see the `Clean_Up_Resources.ipynb` notebook in the `extra` folder. 
+Finished with the POC? If you want to delete all the resources created in your AWS account while following along with these notebooks, please see the `04_Clean_Up_Resources.ipynb` notebook. It will help you identify all of the Personalize resources deployed in your account and shows you how to delete them.
